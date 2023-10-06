@@ -7,5 +7,5 @@ for (let index = 0; index < arrayNumber.length; index++) {
 console.log(`Even positioned Value: ${arrayNumber[index]}`);
     }
 }
-console.log(`===============================================================`);
+console.log(`========================================================================`);
 console.log(`Sum of array elements is:${sum}`);
