@@ -28,7 +28,8 @@ console.log(`6.Added Certificate at the end:`);
 professor.certificates.push("Oracle Certified");
 console.log(professor);
 console.log(`7.Last Element of Array certificates is: ${professor.certificates[professor.certificates.length-1]}`);
-console.log(`8.Complete object is : ${professor}`);
+console.log(`8.Complete object is : `);
+console.table(professor);
 console.log(`9.Traversing of Certificates array by for of loop:`);
 for (const certificate of professor.certificates) {
     console.log(certificate);
