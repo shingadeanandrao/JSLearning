@@ -40,6 +40,6 @@ for (let index = str.length-1; index >= 0; index--) {
     }
     
 }
-console.log(`6==> Reverse Second word of "${str}" is : ${reverse}`);
+console.log(`6==> Reverse Second word of "${str}" is : "${reverse}"`);
 
 

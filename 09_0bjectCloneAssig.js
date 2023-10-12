@@ -18,7 +18,7 @@ const bankLocation = {
 console.log(bankLocation);
 console.log(`======================================================================`);
 console.log(`3.1. bankSbi object cloned to SBIDetails object==>`);
-const SBIDetails = Object.assign(bankSbi);
+const SBIDetails = Object.assign(bankSbi); //Cloned using Assign method
 console.log(SBIDetails);
 console.log(`Account Name: ${SBIDetails.accountName}`);
 console.log(`Account Number: ${SBIDetails.accountNumber}`);
@@ -27,7 +27,7 @@ console.log(`IFSC Code: ${SBIDetails.IFSC}`);
 
 console.log(`======================================================================`);
 console.log(`3.2. bankLocation object cloned to branchLocation object==>`);
-const branchLocation = Object.assign(bankLocation);
+const branchLocation = {...bankLocation};// cloned using Spread Operator
 console.log(branchLocation);
 console.log(`Street Name: ${bankLocation.street}`);
 console.log(`City Name: ${bankLocation.city}`);
