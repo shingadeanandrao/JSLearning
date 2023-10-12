@@ -29,5 +29,25 @@ factorial(7);
 factorial(10);
 
 function primeNumber(num){
-    
+    var count=0;
+    if(num==0 || num == 1)
+    {
+        console.log(`Number ${num} is not prime and not composite.`);
+    }
+    else{
+        for (let index = 2; index <=num; index++) {
+            if(num%index==0){
+                count++;
+            }
+        }
+        if (count>1) {
+            console.log(`Number ${num} is not prime.`);
+        }
+        else{
+            console.log(`Number ${num} is Prime.`);
+        }
+    }
 }
+
+//primeNumber(11);
+primeNumber(12);
