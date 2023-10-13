@@ -10,7 +10,7 @@ let myName = firstName; // Deep Clone
 
 console.log(myName);
 
-firstName = 'GK';
+firstName = 'GK';//for primitive data always deep clone happen
 
 console.log(myName);
 
@@ -38,6 +38,7 @@ let elonPerson = {
 
 elonPerson = person; // Shallow clone
 
+console.log(elonPerson);
  
 
 elonPerson.city= "Mumbai";
@@ -96,3 +97,7 @@ stdBill.name= "Billgates";
  
 
 console.log(stdJenny.name);
+
+
+
+
