@@ -1,4 +1,4 @@
-var array =[11,3,6,10,43,29,50];
+
 
 function isPrime(num){
 
@@ -14,10 +14,9 @@ function isPrime(num){
 
     return true;
    
-
 }
 
-function countNumber(array){
+function countNumber(arr){
     let count = 0;
 for (let i = 0; i < arr.length; i++) {
   if (isPrime(arr[i])) {
@@ -26,9 +25,9 @@ for (let i = 0; i < arr.length; i++) {
 }
 return count;
 }
-
-const arr =[11,3,6,10,43,29,50];
+const array =[11,3,6,10,43,29,50];
 const result = countNumber(array)
-console.log(result);
+console.log(`Number of prime elements in array are:${result}`);
+
 
 
