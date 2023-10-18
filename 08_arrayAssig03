@@ -35,9 +35,9 @@ console.log(newStr);
 */
 console.log(`=========================3.Part 2===============`);
 
-const str = "How are you mate ";
+const givenStr = "How are you mate ";
 
-function convertString(str) {
+/*function convertString(str) {
   let result = '';
   for (let i = 0; i < str.length; i++) {
     if (str.charAt(i) == " ") {
@@ -84,7 +84,8 @@ function convertString(str) {
     return result;
   }
   
-  var finalStr= (convertString(newStr));
+  var finalStr= (convertString(givenStr));
   var str1 = finalStr.replace(finalStr.charAt(15),"E");
-  console.log(`Final String:==> ${str1}`);
+  var str2 =  str1.replace(str1.charAt(14),"t");
+  console.log(`Final String:==> ${str2}`);
   
