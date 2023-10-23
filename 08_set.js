@@ -55,3 +55,5 @@ console.log(setNum);
 arrayNumber = [...new Set(arrayNumber)];
 
 console.log(arrayNumber);
+
+
