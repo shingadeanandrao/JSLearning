@@ -8,7 +8,7 @@ console.log("1.Add 10 to each Element:",arrayAddTen);
 const arrayCube = arrayNumbers.map((currentValue)=>{
     return Math.pow(currentValue,3);
 })
-console.log("2.Cub eof each Element:", arrayCube);
+console.log("2.Cube of each Element:", arrayCube);
 
 const newArray = arrayNumbers.map( (currentValue, index )=> {
 
