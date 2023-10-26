@@ -87,5 +87,31 @@ function convertString(str) {
   var finalStr= (convertString(givenStr));
   var str1 = finalStr.replace(finalStr.charAt(15),"E");
   var str2 =  str1.replace(str1.charAt(14),"t");
-  console.log(`Final String:==> ${str2}`);
+  console.log(`1.Final String:==> ${str2}`);
+
+  console.log(`========================Logic 2=======================================`);
+
+  const str = "How are you mate"; // "HoW ArE YoU MatE"
+
+const arrayWord = str.split(' ');
+
+let finalStr = '';
+
+for (const word of arrayWord) {
+
+    let firstChar = word.charAt(0).toUpperCase();
+
+    let lastChar = word.charAt(word.length-1).toUpperCase();
+
+    // Replace word,  first char by firstChar
+
+    // Replace word,  last char by lastChar
+
+    finalStr = finalStr + word;
+
+    console.log(word, firstChar, lastChar );
+
+}
+
+console.log(finalStr);
   
