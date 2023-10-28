@@ -2,7 +2,7 @@
 
 console.log('======= DOM API getElementById() ===========');
 
-const elementTitle = document.getElementById('title');
+const elementTitle = document.getElementById('#title');
 
 console.log(elementTitle.innerHTML);
 
@@ -15,10 +15,6 @@ const elementH2 = document.getElementsByTagName('h2');
 console.log(elementH2);
 
 console.log(elementH2[0].innerHTML);
-
-console.log(elementH2[1].innerHTML);
-
- 
 
 console.log('======= DOM API getElementsByClassName() ===========');
 
@@ -78,3 +74,21 @@ console.log(`========== Update or change the text of an element ================
 const titleElement = document.querySelector('#title');
 
 titleElement.innerHTML = 'Learning API - Document Object Model';
+
+
+
+console.log(`====================Changing attribute of Element========`);
+const elementAtrr = document.querySelector('#profileLink');
+elementAtrr.setAttribute('href','https://www.linkedin.com/');
+
+
+console.log(`====================Changing style property of Element========`);
+
+elementTitle.style.color='red';
+
+console.log(`====================Creating new Node========`);
+
+const heading =document.createElement("h4");
+const textHeading =document.createTextNode("This is a fourth heading...");
+heading.appendChild(textHeading);
+document.body.appendChild(heading);
